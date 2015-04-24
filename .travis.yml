@@ -1,0 +1,11 @@
+language: python
+branches:
+  only:
+    - master
+env:
+  global:
+    secure: "P78pcBoZEvQZhVcH/fdWu1Sc0cxPw7fqdmpuxkhictOhELCcAbq7+EeBOsRV/uk0m/JWupgjNIof2fme0aebdLnfNH9f1v8fdv2VC4sR3vEepmq3IdA4/p5upvOq2p7Ho6cMoHIr0LTkazRzOJiIOZai1uVZnLA4TyYg4wgN/LI="
+install:
+  - pip install ghp-import
+script:
+  - make develop public gh-pages-commit gh-pages-push
