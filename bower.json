@@ -1,0 +1,13 @@
+{
+  "name": "rescapes-epistolaires",
+  "version": "0.0.0",
+  "main": "public/css/rescapes-epistolaires.css",
+  "ignore": [
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "jQuery": "~2.1.1",
+    "bootstrap": "~3.2.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,180 @@
+/* Bootstrap. */
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+@import url(http://fonts.googleapis.com/css?family=Rouge+Script);
+
+/* Colors. */
+@body_bg_1: #cccccc;
+@body_bg_2: #667690;
+
+/* Fonts. */
+@font-face {
+  font-family: DejaVuSansExtraLight;
+  src: url(../fonts/DejaVuSans-ExtraLight.ttf) format("truetype");
+}
+@font-face {
+  font-family: DejaVuSans;
+  src: url(../fonts/DejaVuSans.ttf) format("truetype");
+}
+@font_standard: DejaVuSans, sans-serif; 
+@font_title: 'Rouge Script', cursive;
+
+/* Utilities. */
+@card_shadow: 3px 3px 10px 0px #303030;
+.cardLayout {
+  background-color: #e0e0e0;
+  -moz-box-shadow: @card_shadow;
+  -webkit-box-shadow: @card_shadow;
+  -o-box-shadow: @card_shadow;
+  box-shadow: @card_shadow;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#606060, Direction=135, Strength=10);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 2em;
+  background-image: url(../img/paper-texture.jpg);
+}
+
+/* Layout. */
+
+/* Macro blocks. */
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  color: #333333;
+  background-color: @body_bg_2;
+  font-family: @font_standard;
+  min-height: 100%;
+}
+
+H1, H2, H3, H4, H5, H6 {
+  font-family: @font_title;
+  text-shadow: 1px 1px 0px #f0f0f0;
+}
+
+H1 {
+  font-size: 4em;
+  margin-top: 0px;
+  color: #000030;
+  text-align: center;
+}
+
+H2 {
+  font-size: 3em;
+  margin: 0em auto 0.5em auto;
+  color: #303060;
+  border-width: 0 0 0px 0;
+  border-style: solid;
+  border-color: #e0e0e0;
+}
+
+H3 {
+  font-size: 2em;
+  margin: 1em auto 0.5em auto;
+  color: #a0a0a0;
+  border-width: 0 0 0px 0;
+  border-style: solid;
+  border-color: #e0e0e0;
+}
+
+#content {
+  margin-top: 0px;
+  margin-bottom: 80px;
+  padding-top: 2em;
+  background-color: @body_bg_2;
+  background: -webkit-linear-gradient(@body_bg_1, @body_bg_2);
+  background: -o-linear-gradient(@body_bg_1, @body_bg_2);
+  background: -moz-linear-gradient(@body_bg_1, @body_bg_2);
+  background: linear-gradient(@body_bg_1, @body_bg_2);
+  background-color: linear-gradient(to bottom, @body_bg_1, @body_bg_2);
+}
+
+/* Navigation, menus, toolbars. */
+
+.footer {
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  border-width: 1px 0 0 0;
+  border-style: solid;
+  border-color: #c0c0c0;
+  > .container-fluid {
+    line-height: 50px;
+    background-color: #f0f0f0;
+    color: #a0a0a0;
+    P {
+      margin: 0 auto;
+    }
+  }
+}
+
+/* Home page. */
+BODY#home {
+  SECTION {
+    > DIV {
+      margin-bottom: 30px;
+    }
+  }
+  #poem {
+    .make-xs-column-offset(0);
+    .make-xs-column(12);
+    .make-sm-column-offset(3);
+    .make-sm-column(6);
+    .make-md-column-offset(3);
+    .make-md-column(6);
+    .make-lg-column-offset(4);
+    .make-lg-column(4);
+    > P {
+      .cardLayout();
+      line-height: 1.2em;
+      font-family: @font_title;
+      font-size: 1.7em;
+      @media (min-width: @screen-sm-min) { padding-left: 3em; }
+      @media (min-width: @screen-md-min) { padding-left: 5em; }
+      @media (min-width: @screen-lg-min) { padding-left: 3em; }
+    }
+  }
+  #what {
+    .make-xs-column-offset(0);
+    .make-xs-column(12);
+    .make-sm-column-offset(0);
+    .make-sm-column(12);
+    .make-md-column-offset(0);
+    .make-md-column(6);
+    .make-lg-column-offset(0);
+    .make-lg-column(6);
+    > DIV {
+      .cardLayout();
+      .signature {
+        font-family: @font_title;
+        font-size: 1.7em;
+      }
+    }
+  }
+  #howto {
+    .make-xs-column-offset(0);
+    .make-xs-column(12);
+    .make-sm-column-offset(0);
+    .make-sm-column(12);
+    .make-md-column-offset(0);
+    .make-md-column(6);
+    .make-lg-column-offset(0);
+    .make-lg-column(6);
+    > DIV {
+      .cardLayout();
+    }
+  }
+  #comments {
+    .make-xs-column(12);
+    > DIV {
+      .cardLayout();
+      background-image: None;
+    }
+  }
+}
