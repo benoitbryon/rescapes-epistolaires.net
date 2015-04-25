@@ -4,7 +4,7 @@ branches:
     - master
 env:
   global:
-    secure: "P78pcBoZEvQZhVcH/fdWu1Sc0cxPw7fqdmpuxkhictOhELCcAbq7+EeBOsRV/uk0m/JWupgjNIof2fme0aebdLnfNH9f1v8fdv2VC4sR3vEepmq3IdA4/p5upvOq2p7Ho6cMoHIr0LTkazRzOJiIOZai1uVZnLA4TyYg4wgN/LI="
+    secure: "Ja3c+ByWnSnev4O7TO2nRc29L2wUpWD6MGFC0pMImS1mtIvUyANADeQnZQVgFbrCdSCNFPhcDE4lmRmEqKa2GiA7+BdyV7vQCKpHNmuxl/C3lr3a16GGz8LCwvxmMDkJhgIYexAtgMWanZoVPbu6vy8CSYzm9N4R8JG5kZ8k50s="
 install:
   - pip install ghp-import
 script:
