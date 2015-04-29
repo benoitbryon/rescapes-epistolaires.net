@@ -22,6 +22,8 @@
 @card_shadow: 3px 3px 10px 0px #303030;
 .cardLayout {
   background-color: #e0e0e0;
+  padding: 2em;
+  background-image: url(../img/paper-texture.jpg);
   -moz-box-shadow: @card_shadow;
   -webkit-box-shadow: @card_shadow;
   -o-box-shadow: @card_shadow;
@@ -30,8 +32,6 @@
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  padding: 2em;
-  background-image: url(../img/paper-texture.jpg);
 }
 
 /* Layout. */
@@ -111,6 +111,16 @@ H3 {
     P {
       margin: 0 auto;
     }
+    .public-domain {
+      font-size: 0.8em;
+      line-height: 1.4em;
+      IMG {
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      margin-bottom: 2em;
+    }
   }
 }
 
@@ -134,10 +144,10 @@ BODY#home {
       .cardLayout();
       line-height: 1.2em;
       font-family: @font_title;
-      font-size: 1.7em;
-      @media (min-width: @screen-sm-min) { padding-left: 3em; }
-      @media (min-width: @screen-md-min) { padding-left: 5em; }
-      @media (min-width: @screen-lg-min) { padding-left: 3em; }
+      font-size: 1.8em;
+      @media (min-width: @screen-sm-min) { padding-left: 2.8em; }
+      @media (min-width: @screen-md-min) { padding-left: 4.5em; }
+      @media (min-width: @screen-lg-min) { padding-left: 2.8em; }
     }
   }
   #what {
